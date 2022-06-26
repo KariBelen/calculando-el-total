@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="calculo">
+        <img src="assets/img/img1.png" alt="" />
+        <p class="titulo">Computador Gamer AMD</p>
+        <div class="form">
+            <input id="cantidad" type="number" value="0" />
+            <select name="" id="color">
+              <option value="red">Rojo</option>
+              <option value="blue">Azul</option>
+              <option value="green">Verde</option>
+            </select>
+        </div>
+        <p class="text-precio">Precio: <span class="precio">400000</span></p>
+        <button onclick="calcularTotal()">Calcular Total</button>
+      </div>
+      <div class="total">
+        <p class="precio-total">Total: $<span class="total">0</span></p>
+        <p class="cantidad-selected">Cantidad:&nbsp <span class="cantidad">0</span></p>
+        <div class="color-selected">
+            <p>Color:&nbsp </p>
+            <div class="circulo">&nbsp</div>
+        </div>
+      </div>
+    </main>
+    <script>
+      function calcularTotal() {
+        precio = document.querySelector(".precio").textContent;
+        cantidad = document.querySelector("#cantidad").value;
+        color = document.querySelector("#color").value;
+
+        document.querySelector("p .total").innerHTML = precio * cantidad;
+        document.querySelector("p .cantidad").innerHTML = cantidad;
+        document.querySelector(".circulo").style.backgroundColor = color;
+        document.querySelector(".circulo").style.border = "1px";
+        document.querySelector(".circulo").style.borderRadius = "50px";
+        document.querySelector(".circulo").style.width = "20px";
+      }
+    </script>
+  </body>
+</html>

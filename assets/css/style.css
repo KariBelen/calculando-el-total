@@ -1,0 +1,106 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+justify-content: center;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.calculo{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 1em;
+    background-color: #89B86E;
+    border: 1px solid black;
+    border-radius: 2%;
+    padding-top: 2em;
+    padding-bottom: 3em;
+
+}
+
+.titulo{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.text-precio{
+    text-align: left;
+    margin-left: 1em;
+    color: white;
+    font-size: 1.5em;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    margin-left: 6.5em;
+    gap: .5em;
+}
+
+#cantidad{
+    height: 2em;
+    border-radius: 5px;
+    border: none;
+    padding: .5em;
+}
+
+#color{
+    height: 2em;
+    border-radius: 5px;
+    border: none;
+}
+
+button{
+    width: 40%;
+    margin-left: 9em;
+    height: 2.5em;
+    background-color: orange;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: rgb(242, 202, 128);
+}
+
+button:active{
+    background-color: orange;
+    border: 3px solid black;
+}
+
+.total{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: .5em;
+}
+
+.precio-total{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.cantidad-selected{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.color-selected{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
